@@ -5,8 +5,9 @@
         <meta charset="utf-8">
         <style>
         body{
-            background:rgba(146, 9, 9, 0.425);
+            background:rgba(163, 163, 163, 0.425);
             background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-mushrooms-royalty-free-image-1614206095.');
+            background:rgb(179, 179, 179)
         }
         h1{
             color:rgb(255, 0, 0);
@@ -23,18 +24,52 @@
             border:solid;
             border-color:rgb(0, 0, 0);
         }
+        #contents{
+            font-size: 40px;
+        }
+        a{
+            color:blue;
+            font-size:large;
+        }
+        a:hover{
+            background: rgba(82, 93, 255, 0.548);
+            color:rgb(255, 123, 0);
+        }
+        #facts{
+            position:absolute;
+            right:10px;
+            top:100px;
+            border:2px;
+            border-style: groove;
+            background:rgba(129, 58, 17, 0.541);
+        }
+        #facts:hover{
+            background:rgba(74, 255, 3, 0.5)
+        }
+        #facts-header{
+            position:absolute;
+            right:205px;
+            top:68px;
+            border:2px;
+            border-style: groove;
+            border-bottom: 0px;
+            background:rgba(129, 58, 17, 0.541);
+        }
+        #facts-header:hover{
+            background:rgba(255, 3, 3, 0.74)
+        }
         </style>
         
     </head>
     <body>
         <h1>Mushrooms</h1>
         <h2 id="pagetop">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</h2>
-        <h2>Contents:</h2>
+        <h2 id="contents">Contents:</h2>
         
         <ol>
-            <li><a href="#link1">Mushroom Species</a></li>
-            <li><a href="#link2">How Mushrooms Grow</a></li>
-            <li><a href="#link3">Cod Mushrooms</a></li>
+            <li class="content-links"><a href="#link1">Mushroom Species</a></li>
+            <li class="content-links"><a href="#link2">How Mushrooms Grow</a></li>
+            <li class="content-links"><a href="#link3">Cod Mushrooms</a></li>
         </ol>
         
         <h2 id="link1">Different types of Mushies</h2>
@@ -47,6 +82,15 @@
             <li>Cod Muchroms</li>
             <li>The one from that one Far Cry 3 mission</li>
         </ul>
-        
+        <h2 id="facts-header">5 Mushroom Facts</h2>
+        <ul id="facts">
+            <li>They come in many sizes</li>
+            <li>they can be found</li>
+            <li>Mushrooms prefer to grow in environments with lots of moisture and with fertile soil</li>
+            <li>they will not pay rent</li>
+            <li>Mushrooms release spores to reproduce,these are spread in the wind</li>
+            <li>toad from maryo mart has a mushroom hat :)</li>
+        </ul>
+
     </body>
 </html>
