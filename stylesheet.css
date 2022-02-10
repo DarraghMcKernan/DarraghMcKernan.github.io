@@ -221,11 +221,20 @@
             text-align: left;
         }
         #grow{
-            font-size: large;
-            background-color: antiquewhite;
-            border-width: 2px;
+            font-size: larger;
+            background-color: rgb(231, 183, 119);
+            border-width: 4px;
             border-style: ridge;
             border-color: black;
+            width: 40%;
+            overflow-y: auto;
+        }
+        #spread{
+            font-size: larger;
+            background-color: rgb(164, 231, 119);
+            border-width: 4px;
+            border-style: ridge;
+            border-color: rgb(0, 0, 0);
             width: 40%;
             overflow-y: auto;
         }
@@ -239,4 +248,22 @@
             position: absolute;
             left:550px;
             top:500px;
+        }
+        #mushroom-cycle{
+            width:460px;
+            position:absolute;
+            top:150px;
+            right:10px;
+            border:3px;
+            border-style: outset;
+            border-color: black;
+        }
+        #roots{
+            font-size: larger;
+            background-color: rgb(119, 214, 231);
+            border-width: 4px;
+            border-style: ridge;
+            border-color: rgb(0, 0, 0);
+            width: 40%;
+            overflow-y: auto;
         }
