@@ -1,269 +1,60 @@
 
-        body{
-            background:rgb(54, 54, 54)
-        }
-        h1{
-            color:rgb(255, 0, 0);
-            background:rgb(184, 184, 184);
-            border:solid;
-            border-color:rgb(0, 0, 0);
-            position:absolute;
-            left:40%;
-            top:-30px;
-            font-size: 60px;
-        }
-        h2{
-            font-size:xx-large;
-        }
-        #mush-types{
-            font-size:25px;
-        }
-        #pagetop{
-            background:rgb(184, 184, 184);
-            border:solid;
-            border-color:rgb(0, 0, 0);
-        }
-        #contents{
-            font-size: 40px;
-        }
-        a{
-            color:blue;
-            font-size:large;
-        }
-        a:hover{
-            background: rgba(82, 93, 255, 0.548);
-            color:rgb(255, 123, 0);
-            border-style: outset;
-            border-width: 3px;
-            border-color: black;
-        }
-        #facts{
-            position:absolute;
-            right:10px;
-            top:100px;
-            border:2px;
-            border-style: groove;
-            background:rgba(129, 58, 17, 0.541);
-        }
-        #facts:hover{
-            background:rgba(74, 255, 3, 0.5)
-        }
-        #facts-header{
-            position:absolute;
-            right:205px;
-            top:68px;
-            border:2px;
-            font-size: x-large;
-            border-style: groove;
-            border-bottom: 0px;
-            background:rgba(129, 58, 17, 0.541);
-        }
-        #facts-header:hover{
-            background:rgba(255, 3, 3, 0.74)
-        }
-        #Mario-Mushy{
-            width:200px;
-            position:absolute;
-            right:10px;
-            top:250px;
-        }
-        #Mario-Mushy:hover{
-            width:300px;
-        }
-        #Red-Mushroom{
-            width:190px;
-            height:150px;
-            position:absolute;
-            right:220px;
-            top:250px;
-        }
-        #Red-Mushroom:hover{
-            width:300px;
-            height:225px;
-        }
-        #MushyGroup{
-            width:200px;
-            height:150px;
-            position:absolute;
-            right:10px;
-            top:410px;
-        }
-        #MushyGroup:hover{
-            width:300px;
-            height:225px;
-        }
-        #Goopy{
-            width:190px;
-            height:150px;
-            position:absolute;
-            right:220px;
-            top:410px;
-        }
-        #Goopy:hover{
-            width:300px;
-            height:225px;
-        }
-        #Brown{
-            width:180px;
-            height:150px;
-            position:absolute;
-            right:420px;
-            top:250px;
-        }
-        #Brown:hover{
-            width:300px;
-            height:225px;
-        }
-        #Generic{
-            position:absolute;
-            right:420px;
-            top:410px;
-            width:180px;
-            height:150px;
-        }
-        #Generic:hover{
-            width:300px;
-            height:225px;
-        }
-        #gallery1{
-            width:290px;
-            height:200px;
-        }
-        #gallery2{
-            width:290px;
-            height:200px;
-        }
-        #gallery3{
-            width:290px;
-            height:200px;
-        }
-        #gallery4{
-            width:290px;
-            height:200px;
-        }
-        #gallery5{
-            width:290px;
-            height:200px;
-        }
-        #gallery6{
-            width:290px;
-            height:200px;
-        }
-        #gallery7{
-            width:290px;
-            height:200px;
-        }
-        #gallery8{
-            width:290px;
-            height:200px;
-        }
-        #gallery9{
-            width:290px;
-            height:200px;
-        }
-        #gallery10{
-            width:290px;
-            height:200px;
-        }
-        #gallery11{
-            width:290px;
-            height:200px;
-        }
-        #gallery12{
-            width:290px;
-            height:200px;
-        }
-        #gallery13{
-            width:290px;
-            height:200px;
-        }
-        #gallery14{
-            width:290px;
-            height:200px;
-        }
-        #gallery15{
-            width:290px;
-            height:200px;
-        }
-        .group1{
-            position:absolute;
-            left:10;
-        }
-        .group2{
-            position:absolute;
-            left:100;
-        }
-        #header{
-            font-size: x-large;
-        }
-        #species{
-            font-size: large;
-        }
-        #sourcespage{
-            position:absolute;
-            bottom:20px;
-            left:50%;
-        }
-        #species-box{
-            border-width: 5px;
-            border-style: ridge;
-            border-color: rgb(197, 169, 43);
-            background-color: rgb(20, 139, 100);
-            width: 330px;
-            height: max-content;
-            position:absolute;
-            right:10px;
-            top:150px;
-            font-size: large;
-        }
-        #warning{
-            color:red;
-            text-align: left;
-        }
-        #grow{
-            font-size: larger;
-            background-color: rgb(231, 183, 119);
-            border-width: 4px;
-            border-style: ridge;
-            border-color: black;
-            width: 40%;
-            overflow-y: auto;
-        }
-        #spread{
-            font-size: larger;
-            background-color: rgb(164, 231, 119);
-            border-width: 4px;
-            border-style: ridge;
-            border-color: rgb(0, 0, 0);
-            width: 40%;
-            overflow-y: auto;
-        }
-        .table{
-            background-color: rgb(132, 132, 132);
-            border-color: black;
-            border-width: 2px;
-            border-style: outset;
-            text-align: center;
-            font-size: larger;
-            position: absolute;
-            left:550px;
-            top:500px;
-        }
-        #mushroom-cycle{
-            width:460px;
-            position:absolute;
-            top:150px;
-            right:10px;
-            border:3px;
-            border-style: outset;
-            border-color: black;
-        }
-        #roots{
-            font-size: larger;
-            background-color: rgb(119, 214, 231);
-            border-width: 4px;
-            border-style: ridge;
-            border-color: rgb(0, 0, 0);
-            width: 40%;
-            overflow-y: auto;
-        }
+body {
+    font-size: large;
+    color: aliceblue;
+    background-color: black;
+    background-image: url('https://attachments.office.net/owa/C00271651%40itcarlow.ie/service.svc/s/GetAttachmentThumbnail?id=AAMkADAzMzBiY2U5LWNlZTEtNDc3MS1iMDlmLTFiY2QyZjM5MGNjZgBGAAAAAABIc9joXaBjQqFKdsNWtZlxBwCEtfq1Li7XTY9D%2FKu5udfcAAAAAAEJAACEtfq1Li7XTY9D%2FKu5udfcAACQjgPXAAABEgAQAEseP16jLyVKsZZjZ9RdZzM%3D&thumbnailType=2&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkZBRDY1NDI2MkM2QUYyOTYxQUExRThDQUI3OEZGMUIyNzBFNzA3RTkiLCJ0eXAiOiJKV1QiLCJ4NXQiOiItdFpVSml4cThwWWFvZWpLdDRfeHNuRG5CLWsifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiMDY1ZWY3MDY5NzZjNDFhZDk4NDM4ZWM5YzRlMzM5ZDciLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEBhNzYyMzcwYy0wNzY3LTRkNWItYjViMy0wMmNjOGVjMjc5ZmQiLCJpc3NyaW5nIjoiU0lQIiwiYXBwY3R4Ijoie1wibXNleGNocHJvdFwiOlwib3dhXCIsXCJwdWlkXCI6XCIxMTUzODAxMTIwNDI3MzU2MDU2XCIsXCJzY29wZVwiOlwiT3dhRG93bmxvYWRcIixcIm9pZFwiOlwiYzZiZDBmMDAtZWMwZS00MmFmLWEzYTAtODY2ZjUzZjYwMTEzXCIsXCJwcmltYXJ5c2lkXCI6XCJTLTEtNS0yMS0zNjk5NTUyNDA4LTIxNDA2MTAxMy0yMzI0NTA4MTctMzQyMzQ3OTlcIn0iLCJuYmYiOjE2NTExNTY4NjUsImV4cCI6MTY1MTE1NzQ2NSwiaXNzIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwQGE3NjIzNzBjLTA3NjctNGQ1Yi1iNWIzLTAyY2M4ZWMyNzlmZCIsImF1ZCI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9hdHRhY2htZW50cy5vZmZpY2UubmV0QGE3NjIzNzBjLTA3NjctNGQ1Yi1iNWIzLTAyY2M4ZWMyNzlmZCIsImhhcHAiOiJvd2EifQ.qGD1d4_Ewbmn28N9wOEuYPaWw4EA5j6qACQpvQXR_js7KDiaTyhtpRm-3oV3dYB-OHFV-pOgaY-t-xoTdiEvaciqViL0gnmfhB4hc1q_oiVLM7T66LrZ4q_jiDsb-r945RN2ke3R7yMrA0ZOM3Hp6uXw9bgFb-fGrNvg1gNmayyDk63386Htu_85yK2J-cEPlxfQf8LcgMFetDfkLxU56GPj8OyOUTkd0n8QIiGQiYi2jq_ka3JURwcvW4gTPL_LhKSqm0dq14_GDdJ6p4EAyHj-xynO7Opa6XOFRfsLZhOV2SDApuq253gdwVhBOmdVD36N_AT9R3rgq5QoUQRcZA&X-OWA-CANARY=WiW7ap54gkCsGicEveY6V5C5CVYlKdoYCmnSGLKfs5L4ppsPpBMNTbiFXGVI4cWop1EgEbH-HPg.&owa=outlook.office.com&scriptVer=20220408004.15&animation=true');
+}
+#Information{
+    border:solid;
+    border-color:rgb(60, 70, 100);
+    position:absolute;
+    right:5%;
+    top:50px;
+    font-size: large;
+}
+#Usability-Titles{
+    font-size: larger;
+    color: rgb(255, 85, 85);
+}
+.Project-Title{
+    font-size: 40px;
+}
+#Menu-Screen{
+    width:600px;
+    height:300px;
+    position:absolute;
+    right:5%;
+    top:75px;
+}
+#Apps-Screen{
+    width:600px;
+    height:300px;
+    position:absolute;
+    right:5%;
+    top:400px;
+}
+#Search-Bar{
+    width:600px;
+    height:300px;
+    position:absolute;
+    right:5%;
+    top:725px;
+}
+#Calling-Screen{
+    width:600px;
+    height:300px;
+    position:absolute;
+    right:5%;
+    top:1050px;
+}
+#Test-Title{
+    font-size: larger;
+    color: rgb(255, 85, 85);
+}
+#Draw-Screen{
+    width:1000px;
+    position:absolute;
+    right:2.5%;
+    top:37.5px;
+}
