@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home Page</title>
-        <meta charset="utf-8">
-        <link rel = "stylesheet" href="stylesheet.css">
-        <link rel = "icon" href="https://static.wixstatic.com/media/5922a2_88d56a1504794d31aea7d5d43c7015dc~mv2.gif">
-    </head>
+<head>        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Darragh McKernan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Programming 22 23</title>
+    <link href="assets/css/screen.css" rel="stylesheet" text="text/css">
+</head>
 <body>
-<h1 class="Project-Title">HCI Accessibility and Usability Project</h1>
 
-<ul id="Information">
-    <li>Darragh McKernan.</li>
-    <li>10/03/2022.</li>
-    <li>Microsoft Teams Report.</li>
-    <li>Microsoft Teams link <a href="https://www.microsoft.com/en-ie/microsoft-teams/group-chat-software">here</a>.</li>
-</ul>
+    <section class="wrapper">
+        <div id="date">Monday 00/00/0000</div>
+        <div id="timer">00:00:00</div>
 
-<p>Introduction:</p>
-<p>Teams is a website created by Microsoft and is part of the Microsoft Suite of sites such as outlook and word.</p>
-<p>Teams has many features that are used to share information easily with groups of people, usually from one organisation.</p>
-<p>Features like live video calling and teams allow users to have conversations with groups of people all at the same time,</p>
-<p>this allows for instantaneous feedback and is incredibly useful when sharing ideas or work.</p>
-<p>Links<ol>
-    <ul><a href="UsabilityAssesment.html">Usability Assesment</a></ul>
-    <ul><a href="UsabilityTest.html">Usability Test</a></ul>
-    <ul><a href="Prototypes.html">Prototypes</a></ul>
-    <ul><a href="Conclusion.html">Conclusion</a></ul>
-</ol></p>
+        <canvas id="the_canvas" width="1100" height="500">
+            Oops! looks like your browser does not support canvas tag
+        </canvas>
+    </section>
+
+    <table>
+        <tbody>
+          <tr>
+            <td>&nbsp;</td>
+            <td><button onmousedown="clickDpadYellow()" onmouseup="clickableDpadReleased()" class="button yellow round">Y</button></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><button onmousedown="clickDpadBlue()" onmouseup="clickableDpadReleased()" class="button blue round">X</button></td>
+            <td>&nbsp;</td>
+            <td><button onmousedown="clickDpadRed()" onmouseup="clickableDpadReleased()" class="button red round">B</button></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><button onmousedown="clickDpadGreen()" onmouseup="clickableDpadReleased()" class="button green round">A</button></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+      
+<script type="text/javascript" src="assets/js/script.js"></script>
+
 </body>
 </html>
