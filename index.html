@@ -1,51 +1,122 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Mushroom Fanpage</title>
-        <meta charset="utf-8">
-        <link rel = "stylesheet" href="stylesheet.css">
-    </head>
-    <body>
-        <h1>Mushrooms</h1>
-        <h2 id="pagetop">+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++</h2>
-        <h2 id="contents">Contents:</h2>
-        
-        <ol>
-            <li class="content-links"><a href="Mushroom Species.html">Mushroom Species</a></li>
-            <li class="content-links"><a href="How Mushrooms Grow.html">How Mushrooms Grow</a></li>
-            <li class="content-links"><a href="Mushroom Gallery.html">Mushroom Gallery</a></li>
-        </ol>
-        
-        <h2 id="link1">Different types of Mushies</h2>
-        
-        <ul id="mush-types">
-            <li>Toad(from mario Mart)</li>
-            <li>bad ones</li>
-            <li>good ones</li>
-            <li>Hallucinogenic Mushies</li>
-            <li>Codd Muchroms</li>
-            <li>The one from that one Far Cry 3 mission</li>
-            <li>1ups in mario</li>
-            <li>The big ones in minecraft mushroom biome</li>
-            <li>Red Mushroom</li>
-            <li>Toadstool</li>
-        </ul>
-        <h2 id="facts-header">5 Mushroom Facts</h2>
-        <ul id="facts">
-            <li>They come in many sizes</li>
-            <li>they can be found</li>
-            <li>Mushrooms prefer to grow in environments with lots of moisture and with fertile soil</li>
-            <li>they will not pay rent</li>
-            <li>Mushrooms release spores to reproduce,these are spread in the wind</li>
-            <li>toad from maryo mart has a mushroom hat :)</li>
-        </ul>
-        <img id="Mario-Mushy"src="https://media0.giphy.com/media/3oz8xJEqVd9MQ1enBe/giphy.gif">
-        <img id="Red-Mushroom"src="https://images.ctfassets.net/cnu0m8re1exe/2d094asxiXehGCvcx7QnKH/e792b90410266045506464e4c844b6d3/shutterstock_315070247.jpg">
-        <img id="MushyGroup"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c6102efc-4c43-4a57-8fd5-138922358991/d943xck-552da57f-5547-4229-8099-ef0ad2367799.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M2MTAyZWZjLTRjNDMtNGE1Ny04ZmQ1LTEzODkyMjM1ODk5MVwvZDk0M3hjay01NTJkYTU3Zi01NTQ3LTQyMjktODA5OS1lZjBhZDIzNjc3OTkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rnvJT2BJtfPaCCIDMtF2F33ioe9LYENG9HAVjX3hCYc">
-        <img id="Goopy"src="https://64.media.tumblr.com/10c4b42b7cef91061e041bd7143764e1/tumblr_p7dnkdkH7v1syjt2wo1_r1_640.gifv">
-        <img id="Brown"src="https://media.nature.com/w700/magazine-assets/d41586-019-03614-0/d41586-019-03614-0_17409632.jpg">
-        <img id="Generic"src="https://www.first-nature.com/fungi/images/lyophyllaceae/calocybe-gambosa4.jpg">
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Resize Runner</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=1280 height=720 tabindex="-1"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Resize Runner</div>
+      </div>
+    </div>
+    <script>
 
-        <a id="sourcespage" href="sources.html">Sources</a>
-    </body>
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var warningBanner = document.querySelector("#unity-warning");
+
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
+      function unityShowBanner(msg, type) {
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+        }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+        if (type == 'error') div.style = 'background: red; padding: 10px;';
+        else {
+          if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+          setTimeout(function() {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/Builds.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/Builds.data.br",
+        frameworkUrl: buildUrl + "/Builds.framework.js.br",
+        codeUrl: buildUrl + "/Builds.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Resize Runner",
+        productVersion: "1.0",
+        showBanner: unityShowBanner,
+      };
+
+      // By default, Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+
+      } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
+
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
+      }
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+              }).then((unityInstance) => {
+                loadingBar.style.display = "none";
+                fullscreenButton.onclick = () => {
+                  unityInstance.SetFullscreen(1);
+                };
+              }).catch((message) => {
+                alert(message);
+              });
+            };
+
+      document.body.appendChild(script);
+
+    </script>
+  </body>
 </html>
